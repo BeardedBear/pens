@@ -1,0 +1,79 @@
+.message-list {
+  background: rgba($border-color, .2);
+  border-right: 1px solid rgba($border-color, .5);
+}
+
+.message {
+  border-bottom: 1px solid rgba($border-color, .5);
+  color: rgb(131, 131, 131);
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  position: relative;
+
+  &--new {
+    background: #fff;
+    color: black;
+
+    &::before {
+      $offset: 3px;
+      background: $primary-color;
+      border-radius: 5px;
+      bottom: $offset;
+      content: "";
+      left: $offset;
+      position: absolute;
+      top: $offset;
+      width: 4px;
+      z-index: 1;
+    }
+  }
+
+  &__content {
+    padding: 15px 15px 15px 0;
+  }
+
+  &__exp {
+    color: rgba(black, .4);
+    display: flex;
+    font-size: .8rem;
+    font-style: italic;
+    justify-content: space-between;
+  }
+
+  &__expr {
+    font-style: italic;
+  }
+
+  &__title {
+    font-weight: bold;
+  }
+
+  &__actions {
+    align-content: space-between;
+    display: grid;
+    grid-auto-flow: row;
+    grid-gap: 5px;
+    padding: 15px;
+    text-align: center;
+    transform: translateX(-10px);
+    transition: transform ease .2s;
+    visibility: hidden;
+  }
+
+  &__icon {
+    color: rgb(206, 206, 206);
+    font-size: .9rem;
+
+    &:hover {
+      color: rgb(100, 100, 100);
+    }
+  }
+
+  &:hover {
+    .message__actions {
+      transform: translateX(0);
+      visibility: visible;
+    }
+  }
+}

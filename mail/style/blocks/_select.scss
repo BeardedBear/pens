@@ -1,0 +1,19 @@
+.select {
+  border: 1px solid $border-color;
+  border-radius: 5px;
+  display: inline-block;
+  line-height: 1;
+  padding-right: 5px;
+  position: relative;
+
+  &__item {
+    all: unset;
+    padding: 5px 10px;
+  }
+
+  &__arrow {
+    position: relative;
+    right: 5px;
+    top: -2px;
+  }
+}

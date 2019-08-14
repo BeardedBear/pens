@@ -1,0 +1,84 @@
+.menu {
+  border-right: 1px solid rgba($border-color, .5);
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  padding: 10px;
+
+  &-user {
+    align-items: center;
+    border-bottom: 1px solid rgba($border-color, .5);
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding: 10px 10px 15px;
+
+    &__id {
+      align-items: center;
+      display: flex;
+    }
+
+    &__name {
+      font-weight: bold;
+
+      @media (max-width: 1300px) {
+        display: none;
+      }
+    }
+
+    &__mail {
+      font-size: .8rem;
+      font-style: italic;
+
+      @media (max-width: 1300px) {
+        display: none;
+      }
+    }
+
+    &__avatar {
+      $size: 30px;
+      border-radius: $size;
+      display: inline-block;
+      margin-right: 10px;
+      width: $size;
+    }
+  }
+
+  &__item {
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    padding: 15px 60px 15px 30px;
+
+    @media (max-width: 1300px) {
+      font-size: 1.5rem;
+      padding: 20px 10px;
+      text-align: center;
+    }
+
+    &:hover {
+      background: rgb(238, 238, 238);
+    }
+
+    &.active {
+      background: $primary-color;
+      color: #fff;
+    }
+  }
+
+  &__icon {
+    color: rgba(black, .2);
+    margin-right: 10px;
+
+    @media (max-width: 1300px) {
+      margin-right: 0;
+    }
+  }
+
+  &__label {
+    font-weight: bold;
+
+    @media (max-width: 1300px) {
+      display: none;
+    }
+  }
+}

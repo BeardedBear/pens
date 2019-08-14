@@ -1,0 +1,14 @@
+$app-radius: 7px;
+$border-color: rgb(221, 221, 221);
+$primary-color: #ff6a88;
+
+@import "./blocks/accounts";
+@import "./blocks/app";
+@import "./blocks/base";
+@import "./blocks/button";
+@import "./blocks/message";
+@import "./blocks/menu";
+@import "./blocks/new";
+@import "./blocks/preview";
+@import "./blocks/select";
+@import "./blocks/top";

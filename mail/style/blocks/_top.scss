@@ -1,0 +1,48 @@
+.top {
+  align-items: center;
+  border-bottom: 1px solid $border-color;
+  border-radius: $app-radius $app-radius 0 0;
+  color: rgb(153, 153, 153);
+  display: flex;
+  font-size: .8rem;
+  font-weight: bold;
+  justify-content: space-between;
+
+  &-search {
+    border-bottom: 1px solid $border-color;
+    padding: 2px 5px;
+  }
+
+  &-menu {
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 15px;
+    line-height: 1;
+    list-style: none;
+    padding-left: 15px;
+  }
+
+  &-action {
+    display: flex;
+
+    &__item {
+      cursor: pointer;
+      font-size: 1rem;
+      padding: 12px 15px;
+
+      &:hover {
+        background: rgb(209, 209, 209);
+        color: rgb(70, 70, 70);
+      }
+
+      &:last-of-type {
+        border-radius: 0 $app-radius 0 0;
+
+        &:hover {
+          background: red;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
