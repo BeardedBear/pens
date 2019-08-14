@@ -1,0 +1,199 @@
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,400i,700,700i&display=swap" rel="stylesheet">
+    <link href="style.scss" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3881a881dd.js"></script>
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <div class="app">
+        <div class="top">
+            <ul class="top-menu">
+                <li class="top-menu__item">File</li>
+                <li class="top-menu__item">Edit</li>
+                <li class="top-menu__item">View</li>
+                <li class="top-menu__item">About</li>
+            </ul>
+            <div class="top-search">
+                <i class="fas fa-search"></i>
+                <input class="input" type="text" placeholder="Search mails...">
+            </div>
+            <div class="top-action">
+                <div class="top-action__item"><i class="far fa-window-minimize"></i></div>
+                <div class="top-action__item"><i class="far fa-window-maximize"></i></div>
+                <div class="top-action__item"><i class="fas fa-times"></i></div>
+            </div>
+        </div>
+        <div class="app__content">
+            <div class="accounts">
+                <div class="accounts__item accounts__item--active">
+                    <img class="accounts__avatar"
+                        src="http://pluspng.com/img-png/png-hd-pictures-of-cats-hd-cat-avatar-kitten-3d-kitten-cat-head-png-image-and-clipart-580.jpg"
+                        alt="">
+                </div>
+                <div class="accounts__item">
+                    <img class="accounts__avatar"
+                        src="https://img.myloview.fr/papiers-peints/cat-avatar-400-31391004.jpg" alt="">
+                </div>
+                <div class="accounts__item">
+                    <img class="accounts__avatar"
+                        src="https://img.myloview.fr/images/cute-cat-wearing-glasses-funny-cartoon-animal-character-vector-illustration-400-101200046.jpg"
+                        alt="">
+                </div>
+            </div>
+            <div class="menu">
+                <div class="menu-user">
+                    <div class="menu-user__id">
+                        <img class="menu-user__avatar"
+                            src="http://pluspng.com/img-png/png-hd-pictures-of-cats-hd-cat-avatar-kitten-3d-kitten-cat-head-png-image-and-clipart-580.jpg"
+                            alt="">
+                        <div>
+                            <div class="menu-user__name">Jean-Claude</div>
+                            <div class="menu-user__mail">jeanclaude@gmail.com</div>
+                        </div>
+                    </div>
+                    <div class="menu-user__options">
+                        <i class="fas fa-ellipsis-h"></i>
+                    </div>
+                </div>
+                <div>
+                    <div class="menu__item active">
+                        <i class="menu__icon fas fa-inbox"></i>
+                        <span class="menu__label">Inbox</span>
+                    </div>
+                    <div class="menu__item">
+                        <i class="menu__icon fas fa-paper-plane"></i>
+                        <span class="menu__label">Sent mail</span>
+                    </div>
+                    <div class="menu__item">
+                        <i class="menu__icon fas fa-pencil-alt"></i>
+                        <span class="menu__label">Drafts</span>
+                    </div>
+                    <div class="menu__item">
+                        <i class="menu__icon fas fa-trash-alt"></i>
+                        <span class="menu__label">Spam</span>
+                    </div>
+                </div>
+                <div class="new">
+                    <button class="new__button new-mail__toggle active"><i class="fas fa-plus"></i></button>
+                    <div class="new-mail active">
+                        <div class="new-mail__top">
+                            <div class="new-mail__title">
+                                <span>Write a new mail from</span>
+                                <div class="select">
+                                    <select class="select__item" name="" id="">
+                                        <option value="">jeanclaude@gmail.com</option>
+                                        <option value="">him@gmail.com</option>
+                                    </select>
+                                    <i class="select__arrow fas fa-sort-down"></i>
+                                </div>
+                            </div>
+                            <i class="new-mail__close new-mail__toggle fas fa-times"></i>
+                        </div>
+                        <div class="new-mail-exp">
+                            <div class="new-mail-exp__item">
+                                <div class="new-mail-exp__label">To</div>
+                                <input placeholder="Enter email" type="text" class="new-mail-exp__input">
+                            </div>
+                            <div class="new-mail-exp__item">
+                                <div class="new-mail-exp__label">Object</div>
+                                <input placeholder="Enter mail object" type="text" class="new-mail-exp__input">
+                            </div>
+                        </div>
+                        <div class="new-mail__content">
+                            <textarea
+                                class="new-mail__message">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur eveniet corrupti deserunt ad cum inventore error architecto voluptatum temporibus eligendi asperiores placeat explicabo, consequatur molestias. Corrupti voluptatem commodi dicta dolorum.</textarea>
+                        </div>
+                        <div class="new-mail-foot">
+                            <div class="new-mail-foot__insert">
+                                <i class="new-mail-foot__icon far fa-file-archive"></i>
+                                <i class="new-mail-foot__icon far fa-image"></i>
+                                <i class="new-mail-foot__icon fas fa-paperclip"></i>
+                            </div>
+                            <div class="new-mail-foot__actions">
+                                <button class="button button new-mail__toggle">Cancel</button>
+                                <button class="button button--primary">
+                                    <i class="fas fa-paper-plane"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="message-list">
+                <div class="message message--new">
+                    <div class="message__actions">
+                        <i class="message__icon far fa-square"></i>
+                        <i class="message__icon fas fa-trash-alt"></i>
+                        <i class="message__icon fas fa-archive"></i>
+                    </div>
+                    <div class="message__content">
+                        <div class="message__exp">
+                            <div>Jean-Roger De LaTour</div>
+                            <div>3 Juil 2019, 15:14</div>
+                        </div>
+                        <div class="message__title">
+                            C'est un mail important !
+                        </div>
+                        <div class="message__expr">
+                            « Alors salut ca va ? »
+                        </div>
+                    </div>
+                </div>
+                <div class="message">
+                    <div class="message__actions">
+                        <i class="message__icon far fa-square"></i>
+                        <i class="message__icon fas fa-trash-alt"></i>
+                        <i class="message__icon fas fa-archive"></i>
+                    </div>
+                    <div class="message__content">
+                        <div class="message__exp">
+                            <div>Jean-Roger De LaTour</div>
+                            <div>Yesterday</div>
+                        </div>
+                        <div class="message__title">
+                            C'est un mail important !
+                        </div>
+                        <div class="message__expr">
+                            « Alors salut ca va ? »
+                        </div>
+                    </div>
+                </div>
+                <div class="message">
+                    <div class="message__actions">
+                        <i class="message__icon far fa-square"></i>
+                        <i class="message__icon fas fa-trash-alt"></i>
+                        <i class="message__icon fas fa-archive"></i>
+                    </div>
+                    <div class="message__content">
+                        <div class="message__exp">
+                            <div>Jean-Roger De LaTour</div>
+                            <div>15 juin</div>
+                        </div>
+                        <div class="message__title">
+                            C'est un mail important !
+                        </div>
+                        <div class="message__expr">
+                            « Alors salut ca va ? »
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="preview">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non accusamus tenetur fugit minus rem aperiam
+                suscipit dignissimos molestias cumque veritatis saepe enim dicta laborum, obcaecati ducimus neque
+                eligendi
+                sunt quasi.
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
