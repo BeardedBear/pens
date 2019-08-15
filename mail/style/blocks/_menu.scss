@@ -1,13 +1,29 @@
 .menu {
-  border-right: 1px solid rgba($border-color, .5);
+  border-right: 1px solid $border-color;
   display: grid;
   grid-template-rows: auto 1fr auto;
   padding: 10px;
 
   &-user {
-    border-bottom: 1px solid rgba($border-color, .5);
+    border-bottom: 1px solid $border-color;
     margin-bottom: 10px;
     padding: 10px 10px 15px;
+
+    .profile-head__name,
+    .profile-head__mail {
+      @media (max-width: 1300px) {
+        display: none;
+      }
+    }
+  }
+
+  &__icon {
+    color: rgba($grey-color, .4);
+    margin-right: 10px;
+
+    @media (max-width: 1300px) {
+      margin-right: 0;
+    }
   }
 
   &__item {
@@ -23,21 +39,16 @@
     }
 
     &:hover {
-      background: rgb(238, 238, 238);
+      background: rgba($grey-color, .1);
     }
 
     &.active {
       background: $primary-color;
       color: #fff;
-    }
-  }
 
-  &__icon {
-    color: rgba(black, .2);
-    margin-right: 10px;
-
-    @media (max-width: 1300px) {
-      margin-right: 0;
+      .menu__icon {
+        color: rgba(#fff, .8);
+      }
     }
   }
 

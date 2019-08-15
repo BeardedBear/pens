@@ -1,8 +1,8 @@
 .app {
-  background: #fff;
+  background: var(--background-color);
   border-radius: $app-radius;
   box-shadow: 0px 11px 20px 0px rgba(0, 0, 0, .2);
-  color: rgb(68, 68, 68);
+  color: var(--font-color);
   display: grid;
   font-family: "Nunito", sans-serif;
   grid-template-rows: auto 1fr;
@@ -11,12 +11,46 @@
   min-width: 780px;
   position: relative;
 
+  &.weird-rotate {
+    animation: weird-rotate 2s linear infinite alternate;
+    @keyframes weird-rotate {
+      from {
+        transform: scale(.3) skew(0deg, 1080deg);
+      }
+      to {
+        transform: scale(1) skew(360deg, 0deg);
+      }
+    }
+  }
+
+  &.dark-mode {
+    --background-color: #28212b;
+    --font-color: rgb(230, 230, 230);
+  }
+
   &__content {
     display: grid;
     grid-template-columns: auto minmax(300px, auto) 1fr;
 
     @media (max-width: 1300px) {
       grid-template-columns: auto 100px 1fr;
+    }
+  }
+
+  &-info {
+    background: rgba(197, 65, 91, .6);
+    border-radius: 0 50px 50px 0;
+    color: var(--background-color);
+    font-family: "Nunito", sans-serif;
+    font-size: .9rem;
+    font-weight: bold;
+    left: 0;
+    padding: 5px 10px;
+    position: absolute;
+    top: 5px;
+
+    a {
+      color: var(--background-color);
     }
   }
 }

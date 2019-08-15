@@ -10,19 +10,11 @@
 
   &__name {
     font-weight: bold;
-
-    @media (max-width: 1300px) {
-      display: none;
-    }
   }
 
   &__mail {
+    color: rgba($grey-color, .8);
     font-size: .8rem;
-    font-style: italic;
-
-    @media (max-width: 1300px) {
-      display: none;
-    }
   }
 
   &__avatar {

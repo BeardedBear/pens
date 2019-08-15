@@ -4,7 +4,7 @@
     background: $primary-color;
     border: 0;
     border-radius: $size;
-    color: #fff;
+    color: var(--background-color);
     cursor: pointer;
     font-size: 1.6rem;
     height: $size;
@@ -23,7 +23,7 @@
 
   &-mail {
     $offset: 20px;
-    background: #fff;
+    background: var(--background-color);
     border: 1px solid $border-color;
     border-radius: $app-radius;
     bottom: $offset;
@@ -33,10 +33,12 @@
     position: absolute;
     transform: scale(0);
     transform-origin: bottom left;
-    transition: all ease-in-out .3s;
+    transition-duration: .3s;
+    transition-property: transform, visibility, opacity;
+    transition-timing-function: ease-in-out;
     visibility: hidden;
     width: 600px;
-    z-index: 999;
+    z-index: 99;
 
     &__close {
       cursor: pointer;
@@ -52,7 +54,7 @@
 
     &__top {
       align-items: center;
-      border-bottom: 1px solid rgba($border-color, .5);
+      border-bottom: 1px solid $border-color;
       display: flex;
       font-weight: bold;
       justify-content: space-between;
@@ -60,8 +62,8 @@
     }
 
     &-exp {
-      background: rgba(221, 221, 221, .2);
-      border-bottom: 1px solid rgba($border-color, .5);
+      background: rgba($grey-color, .1);
+      border-bottom: 1px solid $border-color;
       color: rgb(99, 99, 99);
       font-weight: bold;
       padding: 10px 40px;
@@ -114,8 +116,10 @@
     }
 
     &__message {
+      background: var(--background-color);
       border: 1px solid transparent;
       border-radius: 5px;
+      color: var(--font-color);
       max-height: 50vh;
       min-height: 30vh;
       outline: 0;

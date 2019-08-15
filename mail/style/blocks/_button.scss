@@ -12,6 +12,6 @@
 
   &--primary {
     background: $primary-color;
-    color: #fff;
+    color: var(--background-color);
   }
 }

@@ -1,6 +1,11 @@
 $app-radius: 7px;
-$border-color: rgb(221, 221, 221);
 $primary-color: #ff6a88;
+$grey-color: #808080;
+$border-color: rgba($grey-color, .2);
+:root {
+  --background-color: #fff;
+  --font-color: rgb(68, 68, 68);
+}
 
 @import "./blocks/accounts";
 @import "./blocks/app";
