@@ -1,5 +1,6 @@
 .app {
   background: var(--background-color);
+
   border-radius: $app-radius;
   box-shadow: 0px 11px 20px 0px rgba(0, 0, 0, .2);
   color: var(--font-color);
@@ -7,9 +8,25 @@
   font-family: "Nunito", sans-serif;
   grid-template-rows: auto 1fr;
   height: 100%;
-  line-height: 1.4;
+  line-height: 1.5;
   min-width: 780px;
   position: relative;
+
+  &.bonus-russia {
+    background: linear-gradient(
+      150deg,
+      rgba(233, 233, 233, 1) 0%,
+      rgba(233, 233, 233, 1) 33%,
+      rgba(17, 39, 148, 1) 33%,
+      rgba(17, 39, 148, 1) 66%,
+      rgba(197, 27, 14, 1) 66%,
+      rgba(197, 27, 14, 1) 100%
+    );
+
+    * {
+      cursor: url("https://www.larousse.fr/encyclopedie/data/vignettes/1200048-Vladimir_Poutine.jpg") 0 0, auto !important;
+    }
+  }
 
   &.weird-rotate {
     animation: weird-rotate 2s linear infinite alternate;

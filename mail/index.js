@@ -33,4 +33,5 @@ document.addEventListener("DOMContentLoaded", () => {
   toggleClassToApp(".bonus-zoom", "bonus-zoom", true);
   toggleClassToApp(".bonus-exit", "bonus-exit", true);
   toggleClassToApp(".bonus-why-so-serious", "why-so-serious", false);
+  toggleClassToApp(".bonus-russia", "bonus-russia", false);
 });
