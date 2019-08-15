@@ -28,6 +28,11 @@
     --font-color: rgb(230, 230, 230);
   }
 
+  &.bonus-zoom {
+    transform: scale(3);
+    transition: transform, ease 1s;
+  }
+
   &__content {
     display: grid;
     grid-template-columns: auto minmax(300px, auto) 1fr;
@@ -51,6 +56,27 @@
 
     a {
       color: var(--background-color);
+    }
+  }
+
+  &-cancel-bonuses {
+    background: $primary-color;
+    border: 0;
+    border-radius: 200px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 2rem;
+    left: 50%;
+    outline: 0;
+    padding: 10px 50px;
+    position: fixed;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+    z-index: 999999;
+
+    &--active {
+      visibility: visible;
     }
   }
 }

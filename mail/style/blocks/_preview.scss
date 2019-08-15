@@ -3,7 +3,7 @@
   grid-template-rows: auto 1fr auto;
 
   &__title {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-weight: bold;
   }
 
@@ -13,6 +13,16 @@
     display: flex;
     justify-content: space-between;
     padding: 10px 20px;
+
+    &__icon {
+      color: rgba($grey-color, .5);
+      cursor: pointer;
+      padding: 5px;
+
+      &:hover {
+        color: $grey-color;
+      }
+    }
   }
 
   &-content {

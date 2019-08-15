@@ -1,4 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
+  const cancelBonuses = document.querySelector(".app-cancel-bonuses");
+  const app = document.querySelector(".app");
+
   const toggleBtn = document.querySelectorAll(".new-mail__toggle");
   toggleBtn.forEach(element => {
     element.addEventListener("click", () => {
@@ -7,12 +10,25 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  const bonusWeirdRotate = document.querySelector(".bonus-weird-rotate");
-  bonusWeirdRotate.addEventListener("click", () => {
-    document.querySelector(".app").classList.toggle("weird-rotate");
+  cancelBonuses.addEventListener("click", () => {
+    const classes = ["weird-rotate", "bonus-zoom"];
+    app.classList.remove(...classes);
+    byeCancelButton();
   });
-  const bonusDarkMode = document.querySelector(".bonus-dark-mode");
-  bonusDarkMode.addEventListener("click", () => {
-    document.querySelector(".app").classList.toggle("dark-mode");
-  });
+
+  function byeCancelButton() {
+    cancelBonuses.classList.toggle("app-cancel-bonuses--active");
+  }
+
+  function toggleClassToApp(trigger, className) {
+    let bonus = document.querySelector(trigger);
+    bonus.addEventListener("click", () => {
+      app.classList.toggle(className);
+      byeCancelButton();
+    });
+  }
+
+  toggleClassToApp(".bonus-weird-rotate", "weird-rotate");
+  toggleClassToApp(".bonus-dark-mode", "dark-mode");
+  toggleClassToApp(".bonus-zoom", "bonus-zoom");
 });
