@@ -9,7 +9,6 @@
   height: 100%;
   line-height: 1.5;
   min-width: 780px;
-  overflow: hidden;
   position: relative;
 
   &.bonus-russia {
@@ -68,7 +67,7 @@
     grid-template-columns: auto minmax(300px, auto) 1fr;
 
     @media (max-width: 1300px) {
-      grid-template-columns: auto 100px 1fr;
+      grid-template-columns: auto 80px 1fr;
     }
   }
 

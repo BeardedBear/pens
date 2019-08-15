@@ -34,6 +34,10 @@
 
   &__content {
     padding: 15px 15px 15px 0;
+
+    @media (max-width: 1020px) {
+      padding: 10px 15px 10px 0;
+    }
   }
 
   &__exp {

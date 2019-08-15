@@ -25,9 +25,11 @@
     margin-bottom: 20px;
     padding: 10px 10px 15px;
 
-    .profile-head__name,
-    .profile-head__mail {
-      @media (max-width: 1300px) {
+    @media (max-width: 1300px) {
+      padding: 10px 0 15px;
+
+      .profile-head__name,
+      .profile-head__mail {
         display: none;
       }
     }
@@ -38,14 +40,8 @@
     font-weight: bold;
     padding: 20px 0;
 
-    @media (max-width: 1300px) {
-      text-align: center;
-    }
-
-    &__label {
-      @media (max-width: 1300px) {
-        display: none;
-      }
+    @media (max-width: 1300px), (max-height: 790px) {
+      display: none;
     }
 
     &__item {
@@ -93,7 +89,8 @@
     @media (max-width: 1300px) {
       display: block;
       font-size: 1.5rem;
-      padding: 20px 10px;
+      margin-bottom: 5px;
+      padding: 15px 10px;
       text-align: center;
     }
 
