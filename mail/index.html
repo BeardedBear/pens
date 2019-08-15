@@ -15,12 +15,44 @@
 <body>
     <div class="app">
         <div class="top">
-            <ul class="top-menu">
-                <li class="top-menu__item">File</li>
-                <li class="top-menu__item">Edit</li>
-                <li class="top-menu__item">View</li>
-                <li class="top-menu__item">About</li>
-            </ul>
+            <div class="top-menu">
+                <div class="top-menu__item">
+                    <div class="top-menu__label">File</div>
+                    <ul class="top-menu-sub">
+                        <li class="top-menu-sub__item">hhéhéhéhé</li>
+                        <li class="top-menu-sub__item">hhéhéhéhé</li>
+                        <li class="top-menu-sub__item">hhéhéhéhéhhéhéhéhé</li>
+                        <li class="top-menu-sub__item">hhéhéhéhé</li>
+                    </ul>
+                </div>
+                <div class="top-menu__item">
+                    <div class="top-menu__label">Edit</div>
+                    <ul class="top-menu-sub">
+                        <li class="top-menu-sub__item">hhéhéhéhé</li>
+                        <li class="top-menu-sub__item">hhéhéhéhé</li>
+                        <li class="top-menu-sub__item">hhéhéhéhéhhéhéhéhé</li>
+                        <li class="top-menu-sub__item">hhéhéhéhé</li>
+                    </ul>
+                </div>
+                <div class="top-menu__item">
+                    <div class="top-menu__label">View</div>
+                    <ul class="top-menu-sub">
+                        <li class="top-menu-sub__item">hhéhéhéhé</li>
+                        <li class="top-menu-sub__item">hhéhéhéhé</li>
+                        <li class="top-menu-sub__item">hhéhéhéhéhhéhéhéhé</li>
+                        <li class="top-menu-sub__item">hhéhéhéhé</li>
+                    </ul>
+                </div>
+                <div class="top-menu__item">
+                    <div class="top-menu__label">About</div>
+                    <ul class="top-menu-sub">
+                        <li class="top-menu-sub__item">hhéhéhéhé</li>
+                        <li class="top-menu-sub__item">hhéhéhéhé</li>
+                        <li class="top-menu-sub__item">hhéhéhéhéhhéhéhéhé</li>
+                        <li class="top-menu-sub__item">hhéhéhéhé</li>
+                    </ul>
+                </div>
+            </div>
             <div class="top-search">
                 <i class="fas fa-search"></i>
                 <input class="input" type="text" placeholder="Search mails...">
@@ -127,377 +159,323 @@
                     </div>
                 </div>
             </div>
-            <div class="message-list scrollable">
-                <div class="scrollable__target">
-                    <div class="message message--new">
-                        <div class="message__actions">
-                            <i class="message__icon far fa-square"></i>
-                            <i class="message__icon fas fa-trash-alt"></i>
-                            <i class="message__icon fas fa-archive"></i>
+            <div class="mails">
+                <div class="message-list scrollable">
+                    <div class="scrollable__target">
+                        <div class="message message--new">
+                            <div class="message__actions">
+                                <i class="message__icon far fa-square"></i>
+                                <i class="message__icon fas fa-trash-alt"></i>
+                                <i class="message__icon fas fa-archive"></i>
+                            </div>
+                            <div class="message__content">
+                                <div class="message__exp">
+                                    <div>Jean-Roger De LaTour</div>
+                                    <div class="date">3 Juil 2019, 15:14</div>
+                                </div>
+                                <div class="message__title">
+                                    C'est un mail important !
+                                </div>
+                                <div class="message__expr">
+                                    « Alors salut ca va ? »
+                                </div>
+                            </div>
                         </div>
-                        <div class="message__content">
-                            <div class="message__exp">
-                                <div>Jean-Roger De LaTour</div>
-                                <div>3 Juil 2019, 15:14</div>
+                        <div class="message">
+                            <div class="message__actions">
+                                <i class="message__icon far fa-square"></i>
+                                <i class="message__icon fas fa-trash-alt"></i>
+                                <i class="message__icon fas fa-archive"></i>
                             </div>
-                            <div class="message__title">
-                                C'est un mail important !
+                            <div class="message__content">
+                                <div class="message__exp">
+                                    <div>Jean-Roger De LaTour</div>
+                                    <div class="date">Yesterday</div>
+                                </div>
+                                <div class="message__title">
+                                    C'est un mail important !
+                                </div>
+                                <div class="message__expr">
+                                    « Alors salut ca va ? »
+                                </div>
                             </div>
-                            <div class="message__expr">
-                                « Alors salut ca va ? »
+                        </div>
+                        <div class="message">
+                            <div class="message__actions">
+                                <i class="message__icon far fa-square"></i>
+                                <i class="message__icon fas fa-trash-alt"></i>
+                                <i class="message__icon fas fa-archive"></i>
+                            </div>
+                            <div class="message__content">
+                                <div class="message__exp">
+                                    <div>Jean-Roger De LaTour</div>
+                                    <div class="date">Yesterday</div>
+                                </div>
+                                <div class="message__title">
+                                    C'est un mail important !
+                                </div>
+                                <div class="message__expr">
+                                    « Alors salut ca va ? »
+                                </div>
+                            </div>
+                        </div>
+                        <div class="message message--new message--active">
+                            <div class="message__actions">
+                                <i class="message__icon far fa-square"></i>
+                                <i class="message__icon fas fa-trash-alt"></i>
+                                <i class="message__icon fas fa-archive"></i>
+                            </div>
+                            <div class="message__content">
+                                <div class="message__exp">
+                                    <div>Jean-Roger De LaTour</div>
+                                    <div class="date">Yesterday</div>
+                                </div>
+                                <div class="message__title">
+                                    C'est un mail important !
+                                </div>
+                                <div class="message__expr">
+                                    « Alors salut ca va ? »
+                                </div>
+                            </div>
+                        </div>
+                        <div class="message message--new">
+                            <div class="message__actions">
+                                <i class="message__icon far fa-square"></i>
+                                <i class="message__icon fas fa-trash-alt"></i>
+                                <i class="message__icon fas fa-archive"></i>
+                            </div>
+                            <div class="message__content">
+                                <div class="message__exp">
+                                    <div>Jean-Roger De LaTour</div>
+                                    <div class="date">Yesterday</div>
+                                </div>
+                                <div class="message__title">
+                                    C'est un mail important !
+                                </div>
+                                <div class="message__expr">
+                                    « Alors salut ca va ? »
+                                </div>
+                            </div>
+                        </div>
+                        <div class="message">
+                            <div class="message__actions">
+                                <i class="message__icon far fa-square"></i>
+                                <i class="message__icon fas fa-trash-alt"></i>
+                                <i class="message__icon fas fa-archive"></i>
+                            </div>
+                            <div class="message__content">
+                                <div class="message__exp">
+                                    <div>Jean-Roger De LaTour</div>
+                                    <div class="date">Yesterday</div>
+                                </div>
+                                <div class="message__title">
+                                    C'est un mail important !
+                                </div>
+                                <div class="message__expr">
+                                    « Alors salut ca va ? »
+                                </div>
+                            </div>
+                        </div>
+                        <div class="message">
+                            <div class="message__actions">
+                                <i class="message__icon far fa-square"></i>
+                                <i class="message__icon fas fa-trash-alt"></i>
+                                <i class="message__icon fas fa-archive"></i>
+                            </div>
+                            <div class="message__content">
+                                <div class="message__exp">
+                                    <div>Jean-Roger De LaTour</div>
+                                    <div class="date">Yesterday</div>
+                                </div>
+                                <div class="message__title">
+                                    C'est un mail important !
+                                </div>
+                                <div class="message__expr">
+                                    « Alors salut ca va ? »
+                                </div>
+                            </div>
+                        </div>
+                        <div class="message">
+                            <div class="message__actions">
+                                <i class="message__icon far fa-square"></i>
+                                <i class="message__icon fas fa-trash-alt"></i>
+                                <i class="message__icon fas fa-archive"></i>
+                            </div>
+                            <div class="message__content">
+                                <div class="message__exp">
+                                    <div>Jean-Roger De LaTour</div>
+                                    <div class="date">Yesterday</div>
+                                </div>
+                                <div class="message__title">
+                                    C'est un mail important !
+                                </div>
+                                <div class="message__expr">
+                                    « Alors salut ca va ? »
+                                </div>
+                            </div>
+                        </div>
+                        <div class="message">
+                            <div class="message__actions">
+                                <i class="message__icon far fa-square"></i>
+                                <i class="message__icon fas fa-trash-alt"></i>
+                                <i class="message__icon fas fa-archive"></i>
+                            </div>
+                            <div class="message__content">
+                                <div class="message__exp">
+                                    <div>Jean-Roger De LaTour</div>
+                                    <div class="date">Yesterday</div>
+                                </div>
+                                <div class="message__title">
+                                    C'est un mail important !
+                                </div>
+                                <div class="message__expr">
+                                    « Alors salut ca va ? »
+                                </div>
+                            </div>
+                        </div>
+                        <div class="message">
+                            <div class="message__actions">
+                                <i class="message__icon far fa-square"></i>
+                                <i class="message__icon fas fa-trash-alt"></i>
+                                <i class="message__icon fas fa-archive"></i>
+                            </div>
+                            <div class="message__content">
+                                <div class="message__exp">
+                                    <div>Jean-Roger De LaTour</div>
+                                    <div class="date">Yesterday</div>
+                                </div>
+                                <div class="message__title">
+                                    C'est un mail important !
+                                </div>
+                                <div class="message__expr">
+                                    « Alors salut ca va ? »
+                                </div>
+                            </div>
+                        </div>
+                        <div class="message">
+                            <div class="message__actions">
+                                <i class="message__icon far fa-square"></i>
+                                <i class="message__icon fas fa-trash-alt"></i>
+                                <i class="message__icon fas fa-archive"></i>
+                            </div>
+                            <div class="message__content">
+                                <div class="message__exp">
+                                    <div>Jean-Roger De LaTour</div>
+                                    <div>15 juin</div>
+                                </div>
+                                <div class="message__title">
+                                    C'est un mail important !
+                                </div>
+                                <div class="message__expr">
+                                    « Alors salut ca va ? »
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="message">
-                        <div class="message__actions">
-                            <i class="message__icon far fa-square"></i>
-                            <i class="message__icon fas fa-trash-alt"></i>
-                            <i class="message__icon fas fa-archive"></i>
+                </div>
+                <div class="preview">
+                    <div class="preview-top">
+
+                        <div class="preview__title">C'est un mail important !</div>
+                        <div>
+                            <i class="fas fa-print"></i>
+                            <i class="fas fa-archive"></i>
                         </div>
-                        <div class="message__content">
-                            <div class="message__exp">
-                                <div>Jean-Roger De LaTour</div>
-                                <div>Yesterday</div>
+                    </div>
+                    <div class="scrollable">
+                        <div class="preview-content scrollable__target">
+                            <div class="preview-respond">
+                                <div class="preview-respond__head">
+                                    <div class="profile-head">
+                                        <div class="profile-head__id">
+                                            <img class="profile-head__avatar"
+                                                src="https://creer.casecompany.paris/uploads/themes/original/5c9deb858a91e.png"
+                                                alt="">
+                                            <div>
+                                                <div class="profile-head__name">Jean-Claude</div>
+                                                <div class="profile-head__mail">jeanclaude@gmail.com</div>
+                                            </div>
+                                        </div>
+                                        <div class="date">12 Juil 2019, 20:12</div>
+                                    </div>
+                                </div>
+                                <div class="preview-respond__content">
+                                    <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
+                                        temporibus quasi omnis commodi magni, provident dolorum repudiandae, ipsam ipsa
+                                        voluptatem aut neque asperiores odit cum quaerat placeat debitis explicabo, quos
+                                        dolor. Dolorum laudantium in corrupti, delectus unde obcaecati perferendis
+                                        repellat eveniet velit quam. Eaque iste obcaecati possimus mollitia consequatur.
+                                        Quod?</p>
+                                    <p class="paragraph">Tempora quam adipisci doloremque sapiente quisquam aperiam
+                                        similique dolore exercitationem. Autem optio sed itaque debitis impedit quae,
+                                        voluptatum dolore dolor dolores similique error possimus excepturi fuga vitae
+                                        adipisci beatae commodi velit minima. Adipisci, fuga qui perferendis et facere
+                                        repellendus maxime eum sit ipsum porro modi soluta est accusantium, nostrum
+                                        officiis.</p>
+                                    <p class="paragraph">Eligendi ipsum et in cupiditate cumque sint velit pariatur,
+                                        molestiae, voluptatum deleniti dolorem consequatur explicabo iure sapiente
+                                        doloremque alias aliquam nulla. Minima voluptatum culpa reiciendis magni
+                                        exercitationem, id iure ab perferendis quod necessitatibus sunt vel quo
+                                        voluptatem quibusdam eveniet earum commodi dolore iste soluta nesciunt provident
+                                        nostrum cum quia voluptates.</p>
+                                    <p class="paragraph">Ipsum est accusantium quod magni qui ea ab obcaecati
+                                        reprehenderit omnis natus atque, officia neque a repudiandae doloribus placeat
+                                        laboriosam iste. Ducimus quisquam ut harum labore. Voluptate possimus omnis
+                                        perferendis dicta labore excepturi quia non error quos suscipit quas tempore
+                                        quae numquam quod earum odit cupiditate mollitia, eligendi explicabo totam?</p>
+                                    <p class="paragraph">Laboriosam id nemo distinctio ex culpa quaerat, aspernatur
+                                        adipisci dolore! A suscipit praesentium sunt et magnam corporis consequuntur
+                                        numquam perspiciatis doloremque! Cum, nisi? Perspiciatis debitis modi numquam
+                                        voluptatem provident blanditiis accusamus a voluptatum quia eius hic, ratione
+                                        fuga doloribus error quasi consectetur sequi? Eum ducimus ad a, molestias
+                                        tempora nulla!</p>
+                                </div>
                             </div>
-                            <div class="message__title">
-                                C'est un mail important !
-                            </div>
-                            <div class="message__expr">
-                                « Alors salut ca va ? »
+                            <div class="preview-respond">
+                                <div class="preview-respond__head">
+                                    <div class="profile-head">
+                                        <div class="profile-head__id">
+                                            <img class="profile-head__avatar"
+                                                src="https://creer.casecompany.paris/uploads/themes/original/5c9deb858a91e.png"
+                                                alt="">
+                                            <div>
+                                                <div class="profile-head__name">Jean-Claude</div>
+                                                <div class="profile-head__mail">jeanclaude@gmail.com</div>
+                                            </div>
+                                        </div>
+                                        <div class="date">12 Juil 2019, 20:12</div>
+                                    </div>
+                                </div>
+                                <div class="preview-respond__content">
+                                    <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Aliquam, quidem ipsa eius similique, quo voluptatibus animi non voluptates quae
+                                        aliquid mollitia perferendis dignissimos in pariatur. Ut officia totam quidem
+                                        ipsam quos mollitia error necessitatibus aut optio tempore numquam magni
+                                        possimus velit, molestias nisi. Vero et possimus nisi, tempora accusamus
+                                        necessitatibus?</p>
+                                    <p class="paragraph">Nihil, laborum a exercitationem laudantium dolore quibusdam
+                                        sunt recusandae officia facere ea architecto reiciendis porro totam provident ad
+                                        in minus quaerat illum eos quae temporibus cum nulla. Corporis maiores optio
+                                        voluptates quisquam molestias, repudiandae beatae itaque quia quis sit
+                                        asperiores mollitia quos maxime adipisci aliquam inventore alias earum. Quae,
+                                        dicta!</p>
+                                    <p class="paragraph">Dolorem sint ratione totam. Inventore libero, distinctio odio
+                                        necessitatibus quae labore adipisci sit debitis aliquam corrupti. Suscipit porro
+                                        ut ab sunt dolorum vel neque maiores repudiandae autem minus quam reprehenderit
+                                        quaerat sequi eius, at sint quasi accusantium fuga vitae labore! Similique
+                                        voluptatibus pariatur inventore modi consequuntur ut, tempora eveniet officiis.
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="message">
-                        <div class="message__actions">
-                            <i class="message__icon far fa-square"></i>
-                            <i class="message__icon fas fa-trash-alt"></i>
-                            <i class="message__icon fas fa-archive"></i>
-                        </div>
-                        <div class="message__content">
-                            <div class="message__exp">
-                                <div>Jean-Roger De LaTour</div>
-                                <div>Yesterday</div>
-                            </div>
-                            <div class="message__title">
-                                C'est un mail important !
-                            </div>
-                            <div class="message__expr">
-                                « Alors salut ca va ? »
-                            </div>
-                        </div>
-                    </div>
-                    <div class="message">
-                        <div class="message__actions">
-                            <i class="message__icon far fa-square"></i>
-                            <i class="message__icon fas fa-trash-alt"></i>
-                            <i class="message__icon fas fa-archive"></i>
-                        </div>
-                        <div class="message__content">
-                            <div class="message__exp">
-                                <div>Jean-Roger De LaTour</div>
-                                <div>Yesterday</div>
-                            </div>
-                            <div class="message__title">
-                                C'est un mail important !
-                            </div>
-                            <div class="message__expr">
-                                « Alors salut ca va ? »
-                            </div>
-                        </div>
-                    </div>
-                    <div class="message">
-                        <div class="message__actions">
-                            <i class="message__icon far fa-square"></i>
-                            <i class="message__icon fas fa-trash-alt"></i>
-                            <i class="message__icon fas fa-archive"></i>
-                        </div>
-                        <div class="message__content">
-                            <div class="message__exp">
-                                <div>Jean-Roger De LaTour</div>
-                                <div>Yesterday</div>
-                            </div>
-                            <div class="message__title">
-                                C'est un mail important !
-                            </div>
-                            <div class="message__expr">
-                                « Alors salut ca va ? »
-                            </div>
-                        </div>
-                    </div>
-                    <div class="message">
-                        <div class="message__actions">
-                            <i class="message__icon far fa-square"></i>
-                            <i class="message__icon fas fa-trash-alt"></i>
-                            <i class="message__icon fas fa-archive"></i>
-                        </div>
-                        <div class="message__content">
-                            <div class="message__exp">
-                                <div>Jean-Roger De LaTour</div>
-                                <div>Yesterday</div>
-                            </div>
-                            <div class="message__title">
-                                C'est un mail important !
-                            </div>
-                            <div class="message__expr">
-                                « Alors salut ca va ? »
-                            </div>
-                        </div>
-                    </div>
-                    <div class="message">
-                        <div class="message__actions">
-                            <i class="message__icon far fa-square"></i>
-                            <i class="message__icon fas fa-trash-alt"></i>
-                            <i class="message__icon fas fa-archive"></i>
-                        </div>
-                        <div class="message__content">
-                            <div class="message__exp">
-                                <div>Jean-Roger De LaTour</div>
-                                <div>Yesterday</div>
-                            </div>
-                            <div class="message__title">
-                                C'est un mail important !
-                            </div>
-                            <div class="message__expr">
-                                « Alors salut ca va ? »
-                            </div>
-                        </div>
-                    </div>
-                    <div class="message">
-                        <div class="message__actions">
-                            <i class="message__icon far fa-square"></i>
-                            <i class="message__icon fas fa-trash-alt"></i>
-                            <i class="message__icon fas fa-archive"></i>
-                        </div>
-                        <div class="message__content">
-                            <div class="message__exp">
-                                <div>Jean-Roger De LaTour</div>
-                                <div>Yesterday</div>
-                            </div>
-                            <div class="message__title">
-                                C'est un mail important !
-                            </div>
-                            <div class="message__expr">
-                                « Alors salut ca va ? »
-                            </div>
-                        </div>
-                    </div>
-                    <div class="message">
-                        <div class="message__actions">
-                            <i class="message__icon far fa-square"></i>
-                            <i class="message__icon fas fa-trash-alt"></i>
-                            <i class="message__icon fas fa-archive"></i>
-                        </div>
-                        <div class="message__content">
-                            <div class="message__exp">
-                                <div>Jean-Roger De LaTour</div>
-                                <div>Yesterday</div>
-                            </div>
-                            <div class="message__title">
-                                C'est un mail important !
-                            </div>
-                            <div class="message__expr">
-                                « Alors salut ca va ? »
-                            </div>
-                        </div>
-                    </div>
-                    <div class="message">
-                        <div class="message__actions">
-                            <i class="message__icon far fa-square"></i>
-                            <i class="message__icon fas fa-trash-alt"></i>
-                            <i class="message__icon fas fa-archive"></i>
-                        </div>
-                        <div class="message__content">
-                            <div class="message__exp">
-                                <div>Jean-Roger De LaTour</div>
-                                <div>Yesterday</div>
-                            </div>
-                            <div class="message__title">
-                                C'est un mail important !
-                            </div>
-                            <div class="message__expr">
-                                « Alors salut ca va ? »
-                            </div>
-                        </div>
-                    </div>
-                    <div class="message">
-                        <div class="message__actions">
-                            <i class="message__icon far fa-square"></i>
-                            <i class="message__icon fas fa-trash-alt"></i>
-                            <i class="message__icon fas fa-archive"></i>
-                        </div>
-                        <div class="message__content">
-                            <div class="message__exp">
-                                <div>Jean-Roger De LaTour</div>
-                                <div>15 juin</div>
-                            </div>
-                            <div class="message__title">
-                                C'est un mail important !
-                            </div>
-                            <div class="message__expr">
-                                « Alors salut ca va ? »
-                            </div>
-                        </div>
+                    <div class="preview-foot">
+                        <button class="preview-foot__button button"><i class="fas fa-reply-all"></i> Reply All</button>
+                        <button class="preview-foot__button button"><i class="fas fa-reply"></i> Reply</button>
                     </div>
                 </div>
             </div>
-            <div class="preview">
-                <div class="preview-top">
-
-                    <div class="preview__title">C'est un mail important !</div>
-                    <div>
-                        <i class="fas fa-archive"></i>
-                    </div>
-                </div>
-                <div class="scrollable">
-                    <div class="preview-content scrollable__target">
-                        <div class="preview-respond">
-                            <div class="preview-respond__head">
-                                <div class="profile-head">
-                                    <div class="profile-head__id">
-                                        <img class="profile-head__avatar"
-                                            src="https://creer.casecompany.paris/uploads/themes/original/5c9deb858a91e.png"
-                                            alt="">
-                                        <div>
-                                            <div class="profile-head__name">Jean-Claude</div>
-                                            <div class="profile-head__mail">jeanclaude@gmail.com</div>
-                                        </div>
-                                    </div>
-                                    <div class="profile-head__options">
-                                        12 Juil 2019, 20:12
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="preview-respond__content">
-                                <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
-                                    quisquam
-                                    inventore, modi
-                                    eveniet ratione, omnis ullam placeat ipsa sunt accusantium, velit voluptatem odit
-                                    beatae
-                                    ut
-                                    reprehenderit nemo. Deleniti, officia aliquam?</p>
-                                <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
-                                    quisquam
-                                    inventore, modi
-                                    eveniet ratione, omnis ullam placeat ipsa sunt accusantium, velit voluptatem odit
-                                    beatae
-                                    ut
-                                    reprehenderit nemo. Deleniti, officia aliquam?</p>
-                                <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
-                                    quisquam
-                                    inventore, modi
-                                    eveniet ratione, omnis ullam placeat ipsa sunt accusantium, velit voluptatem odit
-                                    beatae
-                                    ut
-                                    reprehenderit nemo. Deleniti, officia aliquam?</p>
-                                <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
-                                    quisquam
-                                    inventore, modi
-                                    eveniet ratione, omnis ullam placeat ipsa sunt accusantium, velit voluptatem odit
-                                    beatae
-                                    ut
-                                    reprehenderit nemo. Deleniti, officia aliquam?</p>
-                                <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
-                                    quisquam
-                                    inventore, modi
-                                    eveniet ratione, omnis ullam placeat ipsa sunt accusantium, velit voluptatem odit
-                                    beatae
-                                    ut
-                                    reprehenderit nemo. Deleniti, officia aliquam?</p>
-                                <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
-                                    quisquam
-                                    inventore, modi
-                                    eveniet ratione, omnis ullam placeat ipsa sunt accusantium, velit voluptatem odit
-                                    beatae
-                                    ut
-                                    reprehenderit nemo. Deleniti, officia aliquam?</p>
-                                <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
-                                    quisquam
-                                    inventore, modi
-                                    eveniet ratione, omnis ullam placeat ipsa sunt accusantium, velit voluptatem odit
-                                    beatae
-                                    ut
-                                    reprehenderit nemo. Deleniti, officia aliquam?</p>
-                            </div>
-                        </div>
-                        <div class="preview-respond">
-                            <div class="preview-respond__head">
-                                <div class="profile-head">
-                                    <div class="profile-head__id">
-                                        <img class="profile-head__avatar"
-                                            src="https://creer.casecompany.paris/uploads/themes/original/5c9deb858a91e.png"
-                                            alt="">
-                                        <div>
-                                            <div class="profile-head__name">Jean-Claude</div>
-                                            <div class="profile-head__mail">jeanclaude@gmail.com</div>
-                                        </div>
-                                    </div>
-                                    <div class="profile-head__options">
-                                        <i class="fas fa-ellipsis-h"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="preview-respond__content">
-                                <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
-                                    quisquam
-                                    inventore, modi
-                                    eveniet ratione, omnis ullam placeat ipsa sunt accusantium, velit voluptatem odit
-                                    beatae
-                                    ut
-                                    reprehenderit nemo. Deleniti, officia aliquam?</p>
-                                <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
-                                    quisquam
-                                    inventore, modi
-                                    eveniet ratione, omnis ullam placeat ipsa sunt accusantium, velit voluptatem odit
-                                    beatae
-                                    ut
-                                    reprehenderit nemo. Deleniti, officia aliquam?</p>
-                                <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
-                                    quisquam
-                                    inventore, modi
-                                    eveniet ratione, omnis ullam placeat ipsa sunt accusantium, velit voluptatem odit
-                                    beatae
-                                    ut
-                                    reprehenderit nemo. Deleniti, officia aliquam?</p>
-                                <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
-                                    quisquam
-                                    inventore, modi
-                                    eveniet ratione, omnis ullam placeat ipsa sunt accusantium, velit voluptatem odit
-                                    beatae
-                                    ut
-                                    reprehenderit nemo. Deleniti, officia aliquam?</p>
-                                <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
-                                    quisquam
-                                    inventore, modi
-                                    eveniet ratione, omnis ullam placeat ipsa sunt accusantium, velit voluptatem odit
-                                    beatae
-                                    ut
-                                    reprehenderit nemo. Deleniti, officia aliquam?</p>
-                                <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
-                                    quisquam
-                                    inventore, modi
-                                    eveniet ratione, omnis ullam placeat ipsa sunt accusantium, velit voluptatem odit
-                                    beatae
-                                    ut
-                                    reprehenderit nemo. Deleniti, officia aliquam?</p>
-                                <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
-                                    quisquam
-                                    inventore, modi
-                                    eveniet ratione, omnis ullam placeat ipsa sunt accusantium, velit voluptatem odit
-                                    beatae
-                                    ut
-                                    reprehenderit nemo. Deleniti, officia aliquam?</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="preview-foot">
-                    <button class="preview-foot__button button"><i class="fas fa-reply-all"></i> Reply All</button>
-                    <button class="preview-foot__button button"><i class="fas fa-reply"></i> Reply</button>
-                </div>
-            </div>
-
         </div>
-    </div>
     </div>
 </body>
 

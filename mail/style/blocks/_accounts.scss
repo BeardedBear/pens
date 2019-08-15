@@ -28,16 +28,3 @@
     width: $size;
   }
 }
-
-.input {
-  border: 0;
-  font-weight: bold;
-  min-width: 400px;
-  outline: 0;
-  padding: 2px 5px;
-
-  &::placeholder {
-    color: rgb(187, 187, 187);
-    font-style: italic;
-  }
-}

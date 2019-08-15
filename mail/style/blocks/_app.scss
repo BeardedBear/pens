@@ -8,14 +8,25 @@
   grid-template-rows: auto 1fr;
   height: 100%;
   line-height: 1.4;
+  min-width: 780px;
   position: relative;
 
   &__content {
     display: grid;
-    grid-template-columns: auto minmax(300px, auto) minmax(400px, auto) 1fr;
+    grid-template-columns: auto minmax(300px, auto) 1fr;
 
     @media (max-width: 1300px) {
-      grid-template-columns: auto 100px minmax(400px, auto) 1fr;
+      grid-template-columns: auto 100px 1fr;
     }
+  }
+}
+
+.mails {
+  display: grid;
+  grid-template-columns: minmax(400px, auto) 1fr;
+
+  @media (max-width: 1175px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
   }
 }

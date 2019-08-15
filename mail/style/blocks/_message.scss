@@ -15,7 +15,9 @@
   &--new {
     background: #fff;
     color: black;
+  }
 
+  &--active {
     &::before {
       $offset: 3px;
       background: $primary-color;
