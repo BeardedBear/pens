@@ -1,6 +1,7 @@
 .message-list {
   background: rgba($border-color, .2);
   border-right: 1px solid rgba($border-color, .5);
+  position: relative;
 }
 
 .message {

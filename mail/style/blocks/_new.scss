@@ -33,7 +33,7 @@
     position: absolute;
     transform: scale(0);
     transform-origin: bottom left;
-    transition: all cubic-bezier(.42, 0, 0, 1.26) .3s;
+    transition: all ease-in-out .3s;
     visibility: hidden;
     width: 600px;
     z-index: 999;

@@ -5,42 +5,8 @@
   padding: 10px;
 
   &-user {
-    align-items: center;
     border-bottom: 1px solid rgba($border-color, .5);
-    display: flex;
-    justify-content: space-between;
     margin-bottom: 10px;
-    padding: 10px 10px 15px;
-
-    &__id {
-      align-items: center;
-      display: flex;
-    }
-
-    &__name {
-      font-weight: bold;
-
-      @media (max-width: 1300px) {
-        display: none;
-      }
-    }
-
-    &__mail {
-      font-size: .8rem;
-      font-style: italic;
-
-      @media (max-width: 1300px) {
-        display: none;
-      }
-    }
-
-    &__avatar {
-      $size: 30px;
-      border-radius: $size;
-      display: inline-block;
-      margin-right: 10px;
-      width: $size;
-    }
   }
 
   &__item {
