@@ -1,6 +1,6 @@
 .pill {
   align-items: center;
-  background: rgba(black, .07);
+  background: rgba($grey-color, .1);
   border-radius: 30px;
   color: var(--font-color);
   display: flex;
@@ -9,4 +9,9 @@
   height: 20px;
   line-height: 1;
   padding: 0 10px;
+
+  &--solid {
+    background: #fff;
+    color: black;
+  }
 }
