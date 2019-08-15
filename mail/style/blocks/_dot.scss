@@ -1,0 +1,29 @@
+.dot {
+  $size: 8px;
+  border-radius: $size;
+  display: inline-block;
+  height: $size;
+  margin-right: 3px;
+  position: relative;
+  top: -1px;
+  width: $size * 2;
+
+  &--red {
+    background: rgb(255, 103, 103);
+  }
+  &--blue {
+    background: rgb(103, 220, 255);
+  }
+  &--green {
+    background: rgb(84, 221, 137);
+  }
+  &--yellow {
+    background: rgb(255, 207, 103);
+  }
+  &--purple {
+    background: rgb(149, 103, 255);
+  }
+  &--pink {
+    background: rgb(252, 132, 236);
+  }
+}

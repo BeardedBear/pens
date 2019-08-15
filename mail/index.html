@@ -13,10 +13,11 @@
 </head>
 
 <body>
+    <button class="app-cancel-bonuses">Please cancel this !</button>
     <div class="app-info">Source code available <a target="_BLANK"
             href="https://github.com/BeardedBear/pens/tree/master/mail">here</a>
-        <button class="app-cancel-bonuses">Please cancel this !</button>
     </div>
+    <div class="app-info app-info--right bonus-dark-mode">Switch Light/Dark</div>
     <div class="app">
         <div class="top">
             <div class="top-menu">
@@ -42,10 +43,9 @@
                     </ul>
                 </div>
                 <div class="top-menu__item">
-                    <div class="top-menu__label">View</div>
+                    <div class="top-menu__label">Bonus</div>
                     <ul class="top-menu-sub">
                         <li class="top-menu-sub__item bonus-weird-rotate">Infinite weird rotate of the app</li>
-                        <li class="top-menu-sub__item bonus-dark-mode">Switch light / dark</li>
                         <li class="top-menu-sub__item bonus-zoom">Please zoom</li>
                         <li class="top-menu-sub__item bonus-why-so-serious">Why so serious ? </li>
                         <li class="top-menu-sub__item bonus-russia">Please more russia </li>
@@ -57,7 +57,11 @@
                         <li class="top-menu-sub__item">hhéhéhéhé</li>
                         <li class="top-menu-sub__item">hhéhéhéhé</li>
                         <li class="top-menu-sub__item">hhéhéhéhéhhéhéhéhé</li>
-                        <li class="top-menu-sub__item">hhéhéhéhé</li>
+                        <li class="top-menu-sub__separator"></li>
+                        <li class="top-menu-sub__item">
+                            <a class="top-menu-sub__link" target="_BLANK"
+                                href="https://github.com/BeardedBear/pens/tree/master/mail">Repository of this app</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -105,22 +109,50 @@
                     </div>
                 </div>
                 <div>
-                    <div class="menu__item active">
-                        <i class="menu__icon fas fa-inbox"></i>
-                        <span class="menu__label">Inbox</span>
+                    <div class="menu-main">
+                        <div class="menu__item active">
+                            <i class="menu__icon fas fa-inbox"></i>
+                            <span class="menu__label">Inbox</span>
+                        </div>
+                        <div class="menu__item">
+                            <i class="menu__icon fas fa-paper-plane"></i>
+                            <span class="menu__label">Sent mail</span>
+                        </div>
+                        <div class="menu__item">
+                            <i class="menu__icon fas fa-pencil-alt"></i>
+                            <span class="menu__label">Drafts</span>
+                        </div>
+                        <div class="menu__item">
+                            <i class="menu__icon fas fa-trash-alt"></i>
+                            <span class="menu__label">Spam</span>
+                        </div>
                     </div>
-                    <div class="menu__item">
-                        <i class="menu__icon fas fa-paper-plane"></i>
-                        <span class="menu__label">Sent mail</span>
-                    </div>
-                    <div class="menu__item">
-                        <i class="menu__icon fas fa-pencil-alt"></i>
-                        <span class="menu__label">Drafts</span>
-                    </div>
-                    <div class="menu__item">
-                        <i class="menu__icon fas fa-trash-alt"></i>
-                        <span class="menu__label">Spam</span>
-                    </div>
+                    <ul class="menu-tags">
+                        <li class="menu-tags__item">
+                            <span class="dot dot--pink"></span>
+                            <span class="menu-tags__label">Shopping</span>
+                        </li>
+                        <li class="menu-tags__item">
+                            <span class="dot dot--red"></span>
+                            <span class="menu-tags__label">Important</span>
+                        </li>
+                        <li class="menu-tags__item">
+                            <span class="dot dot--blue"></span>
+                            <span class="menu-tags__label">Work</span>
+                        </li>
+                        <li class="menu-tags__item">
+                            <span class="dot dot--green"></span>
+                            <span class="menu-tags__label">Done</span>
+                        </li>
+                        <li class="menu-tags__item">
+                            <span class="dot dot--yellow"></span>
+                            <span class="menu-tags__label">To-Do</span>
+                        </li>
+                        <li class="menu-tags__item">
+                            <span class="dot dot--purple"></span>
+                            <span class="menu-tags__label">Personal</span>
+                        </li>
+                    </ul>
                 </div>
                 <div class="new">
                     <button class="new__button new-mail__toggle"><i class="fas fa-plus"></i></button>
@@ -170,6 +202,28 @@
             <div class="mails">
                 <div class="message-list scrollable">
                     <div class="scrollable__target">
+                        <div class="message">
+                            <div class="message-tags">
+                                <span class="dot dot--green"></span>
+                            </div>
+                            <div class="message__actions">
+                                <i class="message__icon far fa-square"></i>
+                                <i class="message__icon fas fa-trash-alt"></i>
+                                <i class="message__icon fas fa-archive"></i>
+                            </div>
+                            <div class="message__content">
+                                <div class="message__exp">
+                                    <div>Kanye West</div>
+                                    <div class="date">Today, 15:14</div>
+                                </div>
+                                <div class="message__title">
+                                    Please come back bro !
+                                </div>
+                                <div class="message__expr">
+                                    « Please, I need you to make my music fantastic! »
+                                </div>
+                            </div>
+                        </div>
                         <div class="message message--new">
                             <div class="message__actions">
                                 <i class="message__icon far fa-square"></i>
@@ -178,18 +232,22 @@
                             </div>
                             <div class="message__content">
                                 <div class="message__exp">
-                                    <div>Jean-Roger De LaTour</div>
-                                    <div class="date">3 Juil 2019, 15:14</div>
+                                    <div>Phil Collins</div>
+                                    <div class="date">Yesterday, 23:12</div>
                                 </div>
                                 <div class="message__title">
-                                    C'est un mail important !
+                                    Genesis... again ?
                                 </div>
                                 <div class="message__expr">
-                                    « Alors salut ca va ? »
+                                    « Hi Peter, are you interested in coming back to genesis? »
                                 </div>
                             </div>
                         </div>
                         <div class="message">
+                            <div class="message-tags">
+                                <span class="dot dot--purple"></span>
+                                <span class="dot dot--green"></span>
+                            </div>
                             <div class="message__actions">
                                 <i class="message__icon far fa-square"></i>
                                 <i class="message__icon fas fa-trash-alt"></i>
@@ -197,33 +255,14 @@
                             </div>
                             <div class="message__content">
                                 <div class="message__exp">
-                                    <div>Jean-Roger De LaTour</div>
-                                    <div class="date">Yesterday</div>
+                                    <div>Tim Curry</div>
+                                    <div class="date">Yesterday, 20:45</div>
                                 </div>
                                 <div class="message__title">
-                                    C'est un mail important !
+                                    I lost my glasses...
                                 </div>
                                 <div class="message__expr">
-                                    « Alors salut ca va ? »
-                                </div>
-                            </div>
-                        </div>
-                        <div class="message">
-                            <div class="message__actions">
-                                <i class="message__icon far fa-square"></i>
-                                <i class="message__icon fas fa-trash-alt"></i>
-                                <i class="message__icon fas fa-archive"></i>
-                            </div>
-                            <div class="message__content">
-                                <div class="message__exp">
-                                    <div>Jean-Roger De LaTour</div>
-                                    <div class="date">Yesterday</div>
-                                </div>
-                                <div class="message__title">
-                                    C'est un mail important !
-                                </div>
-                                <div class="message__expr">
-                                    « Alors salut ca va ? »
+                                    « Hi, I lost my glasses in your living room, could you bring them back to me? »
                                 </div>
                             </div>
                         </div>
@@ -235,14 +274,14 @@
                             </div>
                             <div class="message__content">
                                 <div class="message__exp">
-                                    <div>Jean-Roger De LaTour</div>
-                                    <div class="date">Yesterday</div>
+                                    <div>Papy Bear</div>
+                                    <div class="date">Yesterday, 12:01</div>
                                 </div>
                                 <div class="message__title">
-                                    C'est un mail important !
+                                    Am I on the Internet?
                                 </div>
                                 <div class="message__expr">
-                                    « Alors salut ca va ? »
+                                    « Oh, my God, I was scared! »
                                 </div>
                             </div>
                         </div>
@@ -254,14 +293,37 @@
                             </div>
                             <div class="message__content">
                                 <div class="message__exp">
-                                    <div>Jean-Roger De LaTour</div>
-                                    <div class="date">Yesterday</div>
+                                    <div>Josie Smith</div>
+                                    <div class="date">Yesterday, 02:59</div>
                                 </div>
                                 <div class="message__title">
-                                    C'est un mail important !
+                                    Have you heard of our lord Raptor Jesus?
                                 </div>
                                 <div class="message__expr">
-                                    « Alors salut ca va ? »
+                                    « Do you know Raptor Jesus? He is the savior of us all. »
+                                </div>
+                            </div>
+                        </div>
+                        <div class="message">
+                            <div class="message-tags">
+                                <span class="dot dot--red"></span>
+                                <span class="dot dot--blue"></span>
+                            </div>
+                            <div class="message__actions">
+                                <i class="message__icon far fa-square"></i>
+                                <i class="message__icon fas fa-trash-alt"></i>
+                                <i class="message__icon fas fa-archive"></i>
+                            </div>
+                            <div class="message__content">
+                                <div class="message__exp">
+                                    <div>Vador</div>
+                                    <div class="date">Monday, 23:12</div>
+                                </div>
+                                <div class="message__title">
+                                    You know... The force...
+                                </div>
+                                <div class="message__expr">
+                                    « HHhhhHHhhhhH Jean hhhhrrhrhhhr Claude hhhHhhhHH »
                                 </div>
                             </div>
                         </div>
@@ -273,14 +335,36 @@
                             </div>
                             <div class="message__content">
                                 <div class="message__exp">
-                                    <div>Jean-Roger De LaTour</div>
-                                    <div class="date">Yesterday</div>
+                                    <div>John Wayne</div>
+                                    <div class="date">Monday, 17:08</div>
                                 </div>
                                 <div class="message__title">
-                                    C'est un mail important !
+                                    STOP saving people !!!
                                 </div>
                                 <div class="message__expr">
-                                    « Alors salut ca va ? »
+                                    « It's MY job, OKAY ?! »
+                                </div>
+                            </div>
+                        </div>
+                        <div class="message">
+                            <div class="message-tags">
+                                <span class="dot dot--pink"></span>
+                            </div>
+                            <div class="message__actions">
+                                <i class="message__icon far fa-square"></i>
+                                <i class="message__icon fas fa-trash-alt"></i>
+                                <i class="message__icon fas fa-archive"></i>
+                            </div>
+                            <div class="message__content">
+                                <div class="message__exp">
+                                    <div>Discount4Life</div>
+                                    <div class="date">Monday, 11:28</div>
+                                </div>
+                                <div class="message__title">
+                                    EXCLUSIVE DISCOUNT JUST FOR YOU
+                                </div>
+                                <div class="message__expr">
+                                    « Unbelievable! Save 89% on the green sock catalogue! »
                                 </div>
                             </div>
                         </div>
@@ -292,14 +376,14 @@
                             </div>
                             <div class="message__content">
                                 <div class="message__exp">
-                                    <div>Jean-Roger De LaTour</div>
-                                    <div class="date">Yesterday</div>
+                                    <div>Dewey</div>
+                                    <div class="date">Monday, 06:35</div>
                                 </div>
                                 <div class="message__title">
-                                    C'est un mail important !
+                                    Poupi Poupi Poupi Pou.
                                 </div>
                                 <div class="message__expr">
-                                    « Alors salut ca va ? »
+                                    « Poupi Poupi Poupi Pou. Poupi Poupi Poupi Pou. »
                                 </div>
                             </div>
                         </div>
@@ -311,14 +395,14 @@
                             </div>
                             <div class="message__content">
                                 <div class="message__exp">
-                                    <div>Jean-Roger De LaTour</div>
-                                    <div class="date">Yesterday</div>
+                                    <div>Vlad Poutipout</div>
+                                    <div class="date">Monday, 04:52</div>
                                 </div>
                                 <div class="message__title">
-                                    C'est un mail important !
+                                    Vodka
                                 </div>
                                 <div class="message__expr">
-                                    « Alors salut ca va ? »
+                                    « Я люблю водку настолько, что пукнул алкоголиком. »
                                 </div>
                             </div>
                         </div>
@@ -330,64 +414,28 @@
                             </div>
                             <div class="message__content">
                                 <div class="message__exp">
-                                    <div>Jean-Roger De LaTour</div>
-                                    <div class="date">Yesterday</div>
+                                    <div>Captain Krabs</div>
+                                    <div class="date">Monday, 02:16</div>
                                 </div>
                                 <div class="message__title">
-                                    C'est un mail important !
+                                    Need for crab meat
                                 </div>
                                 <div class="message__expr">
-                                    « Alors salut ca va ? »
+                                    « Hi, I need some coconut crab meat, quick. »
                                 </div>
                             </div>
                         </div>
-                        <div class="message">
-                            <div class="message__actions">
-                                <i class="message__icon far fa-square"></i>
-                                <i class="message__icon fas fa-trash-alt"></i>
-                                <i class="message__icon fas fa-archive"></i>
-                            </div>
-                            <div class="message__content">
-                                <div class="message__exp">
-                                    <div>Jean-Roger De LaTour</div>
-                                    <div class="date">Yesterday</div>
-                                </div>
-                                <div class="message__title">
-                                    C'est un mail important !
-                                </div>
-                                <div class="message__expr">
-                                    « Alors salut ca va ? »
-                                </div>
-                            </div>
-                        </div>
-                        <div class="message">
-                            <div class="message__actions">
-                                <i class="message__icon far fa-square"></i>
-                                <i class="message__icon fas fa-trash-alt"></i>
-                                <i class="message__icon fas fa-archive"></i>
-                            </div>
-                            <div class="message__content">
-                                <div class="message__exp">
-                                    <div>Jean-Roger De LaTour</div>
-                                    <div>15 juin</div>
-                                </div>
-                                <div class="message__title">
-                                    C'est un mail important !
-                                </div>
-                                <div class="message__expr">
-                                    « Alors salut ca va ? »
-                                </div>
-                            </div>
-                        </div>
+
                     </div>
                 </div>
                 <div class="preview">
                     <div class="preview-top">
 
-                        <div class="preview__title">C'est un mail important !</div>
+                        <div class="preview__title">Am I on the Internet?</div>
                         <div>
                             <i class="preview-top__icon fas fa-print"></i>
                             <i class="preview-top__icon fas fa-archive"></i>
+                            <i class="preview-top__icon fas fa-ellipsis-h"></i>
                         </div>
                     </div>
                     <div class="scrollable">
@@ -397,46 +445,29 @@
                                     <div class="profile-head">
                                         <div class="profile-head__id">
                                             <img class="profile-head__avatar"
-                                                src="https://creer.casecompany.paris/uploads/themes/original/5c9deb858a91e.png"
+                                                src="https://pickaface.net/gallery/avatar/20130510_100741_226_grandpa.png"
                                                 alt="">
                                             <div>
-                                                <div class="profile-head__name">Jean-Claude</div>
-                                                <div class="profile-head__mail">jeanclaude@gmail.com</div>
+                                                <div class="profile-head__name">Papy Bear</div>
+                                                <div class="profile-head__mail">itsmepapy@gmail.com</div>
                                             </div>
                                         </div>
-                                        <div class="date">12 Juil 2019, 20:12</div>
+                                        <div class="date">Yesterday, 11:17</div>
                                     </div>
                                 </div>
                                 <div class="preview-respond__content">
-                                    <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-                                        temporibus quasi omnis commodi magni, provident dolorum repudiandae, ipsam ipsa
-                                        voluptatem aut neque asperiores odit cum quaerat placeat debitis explicabo, quos
-                                        dolor. Dolorum laudantium in corrupti, delectus unde obcaecati perferendis
-                                        repellat eveniet velit quam. Eaque iste obcaecati possimus mollitia consequatur.
-                                        Quod?</p>
-                                    <p class="paragraph">Tempora quam adipisci doloremque sapiente quisquam aperiam
-                                        similique dolore exercitationem. Autem optio sed itaque debitis impedit quae,
-                                        voluptatum dolore dolor dolores similique error possimus excepturi fuga vitae
-                                        adipisci beatae commodi velit minima. Adipisci, fuga qui perferendis et facere
-                                        repellendus maxime eum sit ipsum porro modi soluta est accusantium, nostrum
-                                        officiis.</p>
-                                    <p class="paragraph">Eligendi ipsum et in cupiditate cumque sint velit pariatur,
-                                        molestiae, voluptatum deleniti dolorem consequatur explicabo iure sapiente
-                                        doloremque alias aliquam nulla. Minima voluptatum culpa reiciendis magni
-                                        exercitationem, id iure ab perferendis quod necessitatibus sunt vel quo
-                                        voluptatem quibusdam eveniet earum commodi dolore iste soluta nesciunt provident
-                                        nostrum cum quia voluptates.</p>
-                                    <p class="paragraph">Ipsum est accusantium quod magni qui ea ab obcaecati
-                                        reprehenderit omnis natus atque, officia neque a repudiandae doloribus placeat
-                                        laboriosam iste. Ducimus quisquam ut harum labore. Voluptate possimus omnis
-                                        perferendis dicta labore excepturi quia non error quos suscipit quas tempore
-                                        quae numquam quod earum odit cupiditate mollitia, eligendi explicabo totam?</p>
-                                    <p class="paragraph">Laboriosam id nemo distinctio ex culpa quaerat, aspernatur
-                                        adipisci dolore! A suscipit praesentium sunt et magnam corporis consequuntur
-                                        numquam perspiciatis doloremque! Cum, nisi? Perspiciatis debitis modi numquam
-                                        voluptatem provident blanditiis accusamus a voluptatum quia eius hic, ratione
-                                        fuga doloribus error quasi consectetur sequi? Eum ducimus ad a, molestias
-                                        tempora nulla!</p>
+                                    <p class="paragraph">I plugged in the computer, and I'm not sure I plugged
+                                        in the internets properly. Do you think you could come and check me out? There
+                                        are little beeps in the black box in the living room, maybe I broke the
+                                        internet, I wouldn't want to do anything stupid!</p>
+                                    <p class="paragraph">Grandma tells me I'm an idiot and if I can see my messages it's
+                                        because it's okay, but you know, Grandma's not good with these things. And then
+                                        I'm suspicious, maybe the aliens aren't watching my internets? They would be
+                                        able to fit into the small box in the living room, Jack told me last week, when
+                                        we were drinking wine on the terrace... Do you think that's true? </p>
+                                    <p class="paragraph">Are you there?</p>
+                                    <p class="paragraph">Jean-Claude?</p>
+                                    <p class="paragraph">I call 911.</p>
                                 </div>
                             </div>
                             <div class="preview-respond">
@@ -451,28 +482,32 @@
                                                 <div class="profile-head__mail">jeanclaude@gmail.com</div>
                                             </div>
                                         </div>
-                                        <div class="date">12 Juil 2019, 20:12</div>
+                                        <div class="date">Yesterday, 11:27</div>
                                     </div>
                                 </div>
                                 <div class="preview-respond__content">
-                                    <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                        Aliquam, quidem ipsa eius similique, quo voluptatibus animi non voluptates quae
-                                        aliquid mollitia perferendis dignissimos in pariatur. Ut officia totam quidem
-                                        ipsam quos mollitia error necessitatibus aut optio tempore numquam magni
-                                        possimus velit, molestias nisi. Vero et possimus nisi, tempora accusamus
-                                        necessitatibus?</p>
-                                    <p class="paragraph">Nihil, laborum a exercitationem laudantium dolore quibusdam
-                                        sunt recusandae officia facere ea architecto reiciendis porro totam provident ad
-                                        in minus quaerat illum eos quae temporibus cum nulla. Corporis maiores optio
-                                        voluptates quisquam molestias, repudiandae beatae itaque quia quis sit
-                                        asperiores mollitia quos maxime adipisci aliquam inventore alias earum. Quae,
-                                        dicta!</p>
-                                    <p class="paragraph">Dolorem sint ratione totam. Inventore libero, distinctio odio
-                                        necessitatibus quae labore adipisci sit debitis aliquam corrupti. Suscipit porro
-                                        ut ab sunt dolorum vel neque maiores repudiandae autem minus quam reprehenderit
-                                        quaerat sequi eius, at sint quasi accusantium fuga vitae labore! Similique
-                                        voluptatibus pariatur inventore modi consequuntur ut, tempora eveniet officiis.
-                                    </p>
+                                    <p class="paragraph">Grandpa! Don't call 911!</p>
+                                    <p class="paragraph">Don't panic! they're e-mails, I only see them when they're
+                                        sent, I don't see your messages live! I'm coming to help you.</p>
+                                </div>
+                            </div>
+                            <div class="preview-respond">
+                                <div class="preview-respond__head">
+                                    <div class="profile-head">
+                                        <div class="profile-head__id">
+                                            <img class="profile-head__avatar"
+                                                src="https://pickaface.net/gallery/avatar/20130510_100741_226_grandpa.png"
+                                                alt="">
+                                            <div>
+                                                <div class="profile-head__name">Papy Bear</div>
+                                                <div class="profile-head__mail">itsmepapy@gmail.com</div>
+                                            </div>
+                                        </div>
+                                        <div class="date">Yesterday, 12:01</div>
+                                    </div>
+                                </div>
+                                <div class="preview-respond__content">
+                                    <p class="paragraph">Oh, my God, I was scared!</p>
                                 </div>
                             </div>
                         </div>

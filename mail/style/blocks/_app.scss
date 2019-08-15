@@ -87,6 +87,13 @@
     a {
       color: var(--background-color);
     }
+
+    &--right {
+      border-radius: 50px 0 0 50px;
+      cursor: pointer;
+      left: unset;
+      right: 0;
+    }
   }
 
   &-cancel-bonuses {

@@ -41,11 +41,21 @@
     display: flex;
     font-size: .8rem;
     font-style: italic;
+    font-weight: bold;
     justify-content: space-between;
   }
 
   &__expr {
+    font-size: .9rem;
     font-style: italic;
+    max-width: 300px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    @media (max-width: 1175px) {
+      max-width: 1000px;
+    }
   }
 
   &__title {
@@ -78,5 +88,12 @@
       transform: translateX(0);
       visibility: visible;
     }
+  }
+
+  &-tags {
+    bottom: 2px;
+    line-height: 1;
+    position: absolute;
+    right: 2px;
   }
 }

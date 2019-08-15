@@ -52,6 +52,15 @@
         }
       }
 
+      &__link {
+        color: rgba($grey-color, .8);
+        text-decoration: none;
+
+        &:hover {
+          color: var(--font-color);
+        }
+      }
+
       &__separator {
         border-bottom: 1px solid $border-color;
         margin: 5px 0;
@@ -100,8 +109,8 @@
       padding: 15px;
 
       &:hover {
-        background: rgb(231, 231, 231);
-        color: rgb(70, 70, 70);
+        background: rgba($grey-color, .1);
+        color: var(--font-color);
       }
 
       &:last-of-type {

@@ -2,6 +2,10 @@
   display: grid;
   grid-template-rows: auto 1fr auto;
 
+  @media (max-width: 1175px) {
+    border-top: 1px solid $border-color;
+  }
+
   &__title {
     font-size: 1.6rem;
     font-weight: bold;
