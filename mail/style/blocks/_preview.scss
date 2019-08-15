@@ -2,7 +2,7 @@
   display: grid;
   grid-template-rows: auto 1fr auto;
 
-  @media (max-width: 1175px) {
+  @media (max-width: 1020px) {
     border-top: 1px solid $border-color;
   }
 

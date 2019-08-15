@@ -63,6 +63,12 @@
 
   &-main {
     border-bottom: 1px solid $border-color;
+
+    &__pill {
+      @media (max-width: 1300px) {
+        display: none !important;
+      }
+    }
   }
 
   &__icon {
@@ -85,6 +91,7 @@
     transition: background ease .15s;
 
     @media (max-width: 1300px) {
+      display: block;
       font-size: 1.5rem;
       padding: 20px 10px;
       text-align: center;

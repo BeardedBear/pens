@@ -1,6 +1,5 @@
 .app {
   background: var(--background-color);
-
   border-radius: $app-radius;
   box-shadow: 0px 11px 20px 0px rgba(0, 0, 0, .2);
   color: var(--font-color);
@@ -10,6 +9,7 @@
   height: 100%;
   line-height: 1.5;
   min-width: 780px;
+  overflow: hidden;
   position: relative;
 
   &.bonus-russia {
@@ -122,7 +122,7 @@
   display: grid;
   grid-template-columns: minmax(400px, auto) 1fr;
 
-  @media (max-width: 1175px) {
+  @media (max-width: 1020px) {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 2fr;
   }
