@@ -28,6 +28,19 @@
     --font-color: rgb(230, 230, 230);
   }
 
+  &.why-so-serious {
+    --background-color: #751e9b;
+    --font-color: rgb(64, 255, 38);
+    font-family: cursive;
+    font-size: 1.6em;
+  }
+
+  &.bonus-exit {
+    margin-top: 50%;
+    transform: scale(0) translateY(-200%) rotate(500deg);
+    transition: all, ease 1s;
+  }
+
   &.bonus-zoom {
     transform: scale(3);
     transition: transform, ease 1s;

@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   cancelBonuses.addEventListener("click", () => {
-    const classes = ["weird-rotate", "bonus-zoom"];
+    const classes = ["weird-rotate", "bonus-zoom", "bonus-exit"];
     app.classList.remove(...classes);
     byeCancelButton();
   });
@@ -20,15 +20,17 @@ document.addEventListener("DOMContentLoaded", () => {
     cancelBonuses.classList.toggle("app-cancel-bonuses--active");
   }
 
-  function toggleClassToApp(trigger, className) {
+  function toggleClassToApp(trigger, className, cancellable) {
     let bonus = document.querySelector(trigger);
     bonus.addEventListener("click", () => {
       app.classList.toggle(className);
-      byeCancelButton();
+      if (cancellable) byeCancelButton();
     });
   }
 
-  toggleClassToApp(".bonus-weird-rotate", "weird-rotate");
-  toggleClassToApp(".bonus-dark-mode", "dark-mode");
-  toggleClassToApp(".bonus-zoom", "bonus-zoom");
+  toggleClassToApp(".bonus-weird-rotate", "weird-rotate", true);
+  toggleClassToApp(".bonus-dark-mode", "dark-mode", false);
+  toggleClassToApp(".bonus-zoom", "bonus-zoom", true);
+  toggleClassToApp(".bonus-exit", "bonus-exit", true);
+  toggleClassToApp(".bonus-why-so-serious", "why-so-serious", false);
 });
