@@ -1,16 +1,35 @@
 .message-list {
-  background: rgba($grey-color, .08);
   border-right: 1px solid $border-color;
-  position: relative;
+
+  > .scrollable__target {
+    padding: 15px;
+    padding-right: 5px;
+  }
+
+  &:hover {
+    ::-webkit-scrollbar-thumb {
+      background-color: rgba(120, 120, 120, .2);
+    }
+  }
 }
 
 .message {
-  border-bottom: 1px solid rgba($grey-color, .1);
+  background: rgba($grey-color, .08);
+  border: 1px solid rgba($grey-color, .2);
+  border-bottom: 0;
   color: rgba($grey-color, .9);
   cursor: pointer;
   display: grid;
   grid-template-columns: auto 1fr;
   position: relative;
+
+  &:first-of-type {
+    border-radius: 5px 5px 0 0;
+  }
+  &:last-of-type {
+    border-bottom: 1px solid rgba($grey-color, .2);
+    border-radius: 0 0 5px 5px;
+  }
 
   &--new {
     background: var(--background-color);
