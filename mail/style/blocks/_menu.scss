@@ -16,6 +16,7 @@
     padding: 10px 10px 15px;
 
     @media (max-width: 1300px) {
+      margin-bottom: 10px;
       padding: 10px 0 15px;
 
       .profile-head__name,
@@ -30,8 +31,14 @@
     font-weight: bold;
     padding: 20px 0;
 
-    @media (max-width: 1300px), (max-height: 790px) {
+    @media (max-height: 640px) {
       display: none;
+    }
+
+    &__label {
+      @media (max-width: 1300px) {
+        display: none;
+      }
     }
 
     &__item {
@@ -43,6 +50,10 @@
 
       &:hover {
         background: rgba($grey-color, .1);
+      }
+
+      @media (max-width: 1300px) {
+        text-align: center;
       }
     }
   }
@@ -80,7 +91,7 @@
       display: block;
       font-size: 1.5rem;
       margin-bottom: 5px;
-      padding: 12px 10px;
+      padding: 5px 10px 7px;
       text-align: center;
     }
 

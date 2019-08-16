@@ -1,4 +1,7 @@
 .new {
+  @media (max-width: 1300px) {
+    text-align: center;
+  }
   &__button {
     $size: 50px;
     background: $primary-color;
