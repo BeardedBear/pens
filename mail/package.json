@@ -5,12 +5,13 @@
   "main": "index.js",
   "scripts": {
     "start": "./node_modules/.bin/parcel index.html",
-    "build": "./node_modules/.bin/parcel build index.html"
+    "build": "rimraf dist/ && ./node_modules/.bin/parcel build index.html"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "parcel-bundler": "^1.12.3",
+    "rimraf": "^3.0.0",
     "sass": "^1.22.9",
     "stylelint": "^10.1.0",
     "stylelint-config-standard": "^18.3.0",
