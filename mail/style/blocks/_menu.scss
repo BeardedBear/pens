@@ -29,9 +29,9 @@
   &-tags {
     font-size: .9rem;
     font-weight: bold;
-    padding: 20px 0;
+    padding: 20px 0 0;
 
-    @media (max-height: 640px) {
+    @media (max-height: 740px) {
       display: none;
     }
 

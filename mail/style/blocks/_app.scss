@@ -73,7 +73,7 @@
   }
 
   &-info {
-    background: rgba(197, 65, 91, .6);
+    background: rgba(197, 65, 91, 1);
     border-radius: 0 50px 50px 0;
     color: var(--background-color);
     font-family: "Nunito", sans-serif;
@@ -82,7 +82,8 @@
     left: 0;
     padding: 5px 10px;
     position: absolute;
-    top: 5px;
+    top: 0;
+    z-index: 1;
 
     a {
       color: var(--background-color);
